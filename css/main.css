@@ -1,0 +1,268 @@
+:root{
+  --primary-color: #060507;
+  --secondary-color: #F5F4EF;
+}
+
+body{
+  background: var(--primary-color);
+  margin: auto;
+  color: var(--secondary-color);
+  overflow-x: hidden;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+#first-section{
+  height:100vh;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo-img{
+  background:white;
+  width: 93px;
+  height: 82px;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+#sign-up-button{
+
+}
+#small-gold-background{
+  position:relative;
+   left: 62%;
+  bottom:50.1em;
+  }
+#intro-small-gold-img{
+  width:90%;
+  border-radius:0 32px 0 0;
+}
+#gold-background{
+  position:relative;
+  top:40%;
+
+}
+#intro-big-gold-img{
+ min-width:80%
+}
+
+main{
+
+
+}
+#intro{
+ margin-bottom:200px;
+}
+#intro-card{
+  margin-top:50px;
+  border-radius: 30px;
+  border-color:var(--secondary-color);
+  border-style: solid;
+  border-width:1px;
+}
+#social-media{
+  position:relative;
+  min-width: 10vw;
+  top: 200px;
+}
+#follow-us{
+  transform: rotate(90deg);
+}
+#ducati-logo-img{
+  width:200px;
+  margin-left:2%;
+}
+
+#intro-motor-img{
+  max-width:90%;
+
+}
+#tire-photo-img, #steer-photo-img{
+max-width:40%;
+
+}
+.info{
+  margin:1em;
+}
+#info-text{
+  position:relative;
+  top:50px;
+  display:flex;
+  flex-direction:column;
+  margin-right:2em;
+
+}
+
+.footnote-text{
+  font-size:10px;
+  font-weight:400;
+  margin:1px;
+}
+.info-text{
+  font-size: 1.5em;
+  font-weight:bold
+}
+#intro-blocks{
+  display:flex;
+  justify-content:space-around;
+  margin:auto;
+}
+
+#intro-text{
+  margin-left: 30%;
+  margin-top: 4%;
+  font-size:8px;
+  min-width:40%;
+  text-align:center;
+}
+#intro-text-para{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  width:70%;
+  font-size:15px;
+}
+
+#motor-descriptions{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4em;
+  margin-bottom: 200px;
+}
+
+.disc{
+  margin:auto;
+  min-height:390px;
+  border-radius: 30px;
+  border-color:var(--secondary-color);
+  border-style: solid;
+  border-width:1px;
+}
+.overlay{
+
+}
+
+.disc-1, .disc-2, .disc-3, .disc-4{
+  text-align: center;
+
+  background-size: contain;
+}
+.disc-1{
+  background: url('engine.png') no-repeat ;
+}
+.disc-2{
+  background: url('wheel.png') no-repeat ;
+}
+.disc-3{
+  background: url('tank.png') no-repeat ;
+}
+.disc-4{
+  background: url('brake.png') no-repeat ;
+}
+#process-card{
+  margin-bottom: 200px;
+  border-radius: 30px;
+  border-color:var(--secondary-color);
+  border-style: solid;
+  border-width:1px;
+  display:grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 8em;
+  justify-content:space-between;
+  align-items:center;
+  align-content:center;
+}
+#process-ul{
+  display: flex;
+  flex-direction: column;
+  margin-left:4em;
+}
+
+#process-ul li{
+  margin-bottom:40px;
+  margin-top:40px;
+
+  padding-left: 150px;
+}
+#process-1{
+  background: url("process-1.svg") left center no-repeat;
+}#process-2{
+  background: url("process-2.svg") left center no-repeat;
+}#process-3{
+  background: url("process-3.svg") left center no-repeat;
+}
+#process-images{
+  margin-left: 3em;
+}
+#process-img-motor-1{
+  width:60%;
+
+}
+#process-img-motor-2{
+  width:60%;
+}#process-img-motor-3{
+  width:60%;
+}
+
+ footer section{
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content:space-between;
+ }
+
+ #footer-logo{
+   width:20%;
+   margin: auto;
+ }
+#company, #branches, #get-in-touch,
+#branches ul, #get-in-touch ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin:auto;
+}
+
+#copyright{
+  margin-top:2em;
+  display:flex;
+  justify-content:center;
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+
+
