@@ -1,29 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
   --primary-color: #060507;
   --secondary-color: #F5F4EF;
 }
 
-body{
+body {
+  font-family: 'Poppins', sans-serif;
   background: var(--primary-color);
   margin: auto;
   color: var(--secondary-color);
   overflow-x: hidden;
+
 }
+
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
 
-ul{
+ul {
   list-style: none;
 }
-#first-section{
-  height:100vh;
-}
-header{
+
+header {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--primary-color);
+  height: 100px;
+  padding-top: 10px;
 }
+
+
 
 #logo-img{
   background:white;
@@ -43,64 +54,85 @@ ul{
    left: 62%;
   bottom:50.1em;
   }
-#intro-small-gold-img{
-  width:90%;
-  border-radius:0 32px 0 0;
-}
-#gold-background{
-  position:relative;
-  top:40%;
 
-}
-#intro-big-gold-img{
- min-width:80%
+#intro-small-gold-img {
+  width: 90%;
+  border-radius: 0 32px 0 0;
 }
 
-main{
+#gold-background {
+  position: relative;
+  top: 350px;
+  right: 520px;
+  z-index: -1;
+}
 
+#intro-big-gold-img {
+  height: 600px;
+  width: 1400px;
+}
+
+#intro {
+  max-height: 400px;
 
 }
-#intro{
- margin-bottom:200px;
-}
-#intro-card{
-  margin-top:50px;
+
+#intro-card {
+  margin-top: 50px;
   border-radius: 30px;
-  border-color:var(--secondary-color);
+  border-color: var(--secondary-color);
   border-style: solid;
-  border-width:1px;
+  border-width: 1px;
+  position: relative;
+  bottom: 500px;
 }
-#social-media{
-  position:relative;
+
+#social-media {
+  position: relative;
   min-width: 10vw;
   top: 200px;
 }
-#follow-us{
+
+#follow-us {
   transform: rotate(90deg);
 }
-#ducati-logo-img{
-  width:200px;
-  margin-left:2%;
+
+#ducati-motor {
+  background-color: var(--primary-color);
+  padding-right: 4px;
+  padding-bottom: 8px;
 }
 
-#intro-motor-img{
-  max-width:90%;
+#intro-motor-parts {
+  background-color: var(--primary-color);
+  padding-left: 4px;
+}
+
+#ducati-logo-img {
+  width: 200px;
+  margin-left: 2%;
 
 }
-#tire-photo-img, #steer-photo-img{
-max-width:40%;
+
+#intro-motor-img {
+  max-width: 90%;
+}
+
+#tire-photo-img, #steer-photo-img {
+  max-width: 40%;
 
 }
-.info{
-  margin:1em;
-}
-#info-text{
-  position:relative;
-  top:50px;
-  display:flex;
-  flex-direction:column;
-  margin-right:2em;
 
+.info {
+  margin: 1em;
+}
+
+#info-text {
+  position: relative;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
 }
 
 .footnote-text{
@@ -118,65 +150,85 @@ max-width:40%;
   margin:auto;
 }
 
-#intro-text{
-  margin-left: 30%;
-  margin-top: 4%;
-  font-size:8px;
-  min-width:40%;
-  text-align:center;
-}
-#intro-text-para{
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  width:70%;
-  font-size:15px;
+#intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding-bottom: 2em;
+  border-radius: 0 0 32px 32px;
 }
 
-#motor-descriptions{
-  width:100%;
+#intro-text-para {
+  margin: auto;
+  min-width: 40%;
+  width: 70%;
+  font-size: 15px;
+  text-align: center;
+}
+
+#motor-descriptions {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4em;
   margin-bottom: 200px;
 }
 
-.disc{
-  margin:auto;
-  min-height:390px;
+.disc {
+  margin: auto;
+  min-height: 390px;
   border-radius: 30px;
-  border-color:var(--secondary-color);
+  border-color: var(--secondary-color);
   border-style: solid;
-  border-width:1px;
-}
-.overlay{
-
-}
-
-.disc-1, .disc-2, .disc-3, .disc-4{
+  border-width: 1px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   text-align: center;
+}
 
+.disc-text {
+  margin: auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.disc-text p {
+  margin: auto;
+}
+
+.disc-1, .disc-2, .disc-3, .disc-4 {
+  text-align: center;
   background-size: contain;
 }
-.disc-1{
-  background: url('engine.png') no-repeat ;
+
+.disc-1 {
+  background: linear-gradient(45deg, rgba(6, 5, 7, 0.9), rgba(245, 244, 239, 0.1)), url('engine.png') no-repeat;
 }
-.disc-2{
-  background: url('wheel.png') no-repeat ;
+
+.disc-2 {
+  background: linear-gradient(45deg, rgba(6, 5, 7, 0.9), rgba(245, 244, 239, 0.1)), url('wheel.png') no-repeat;
 }
-.disc-3{
-  background: url('tank.png') no-repeat ;
+
+.disc-3 {
+  background: linear-gradient(45deg, rgba(6, 5, 7, 0.9), rgba(245, 244, 239, 0.1)), url('tank.png') no-repeat;
 }
-.disc-4{
-  background: url('brake.png') no-repeat ;
+
+.disc-4 {
+  background: linear-gradient(45deg, rgba(6, 5, 7, 0.9), rgba(245, 244, 239, 0.1)), url('brake.png') no-repeat;
 }
-#process-card{
+
+#process-card {
   margin-bottom: 200px;
   border-radius: 30px;
-  border-color:var(--secondary-color);
+  border-color: var(--secondary-color);
   border-style: solid;
-  border-width:1px;
-  display:grid;
+  border-width: 1px;
+  display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 8em;
   justify-content:space-between;
@@ -201,46 +253,67 @@ max-width:40%;
   background: url("process-2.svg") left center no-repeat;
 }#process-3{
   background: url("process-3.svg") left center no-repeat;
-}
-#process-images{
+ }
+
+#process-images {
   margin-left: 3em;
 }
-#process-img-motor-1{
-  width:60%;
+
+#process-img-motor-1 {
+  width: 60%;
 
 }
-#process-img-motor-2{
-  width:60%;
-}#process-img-motor-3{
-  width:60%;
+
+#process-img-motor-2 {
+  width: 60%;
 }
 
- footer section{
-   display:grid;
-   grid-template-columns: repeat(3, 1fr);
-   justify-content:space-between;
- }
+#process-img-motor-3 {
+  width: 60%;
+}
 
- #footer-logo{
-   width:20%;
-   margin: auto;
- }
+footer {
+  background-color: #131313;
+}
+
+footer section {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+#footer-logo {
+  width: 20%;
+  margin: auto;
+}
+
 #company, #branches, #get-in-touch,
-#branches ul, #get-in-touch ul{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  margin:auto;
+#branches, #get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
-#copyright{
-  margin-top:2em;
-  display:flex;
-  justify-content:center;
+#branches ul, #get-in-touch ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#company p {
+  width: 40%
+}
+
+#copyright {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
+
 
 .container {
   padding-right: 15px;

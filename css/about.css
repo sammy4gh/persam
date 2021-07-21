@@ -1,52 +1,75 @@
-#about{
+
+h1 {
+  font-weight: 900;
+  font-size: 90px;
+}
+
+#about-body {
   text-align: center;
 }
-#about-intro{
-  margin:auto;
+
+#about-intro {
+  margin: auto;
   height: 100vh;
-}
-#about-intro h1{
-  margin-bottom: 300px;
+  background: linear-gradient(90deg, rgba(6, 5, 7, 0.9), rgba(245, 244, 239, 0)), url('steer.png') no-repeat center;
+  background-size: 100% 100%;
 }
 
-#workers{
-  margin:auto;
-  height: 100vh;
-
-}
-#workers h1{
+#about-intro h1 {
   margin-top: 100px;
-
+  margin-bottom: 200px;
 }
-#workers article{
+
+#workers {
+  margin: auto;
+  height: 100vh;
+}
+
+#workers h2 {
+  margin-bottom: 100px;
+}
+
+#workers article {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top:100px;
+  margin-top: 100px;
 }
-.worker{
-  margin:3em;
+
+.worker {
+  margin: 2em;
 }
-.worker img{
-  width:200px;
-  border-radius:50%;
+
+.worker img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
-#about-contact{
+
+.worker-position {
+  color: #888888;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#about-contact {
+  margin-top: 300px;
   margin-bottom: 200px;
 }
-#contact-btn{
+
+#contact-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
 }
-#contact-btn h5{
-  padding-left:20px;
-  padding-right:40px;
-  padding-top:10px;
-  padding-bottom:10px;
-  width:30px;
-  background-color:gold;
-  margin:auto;
+
+#contact-btn h5 {
+  padding: 10px 40px 10px 20px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  margin: auto;
+  color: var(--primary-color);
+  border-radius: 10px;
 }
