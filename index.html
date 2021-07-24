@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PerSam</title>
+  <title>PerSam Ducati</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -30,7 +30,7 @@
 
 <header>
   <!-- company-logo-->
-  <div id="logo"><img alt="logo" id="logo-img" src="./img/logo.jpg"></div>
+  <div id="logo"><img alt="logo" id="logo-img" src="./img/logo.png"></div>
   <!--Nav-->
   <nav id="nav">
     <ul>
@@ -66,7 +66,7 @@
       <div id="intro-blocks">
       <!--ducati motor-->
       <div id="ducati-motor">
-        <img src="./img/intro-motor.png" alt="ducati-moto" id="intro-motor-img">
+        <img alt="ducati-moto" data-aos="fade-right" id="intro-motor-img" src="./img/intro-motor.png">
         </div>
       <div id="intro-motor-parts">
         <!--tire photo-->
@@ -130,7 +130,7 @@
     <!--parts of the motor with description-->
     <article id="motor-descriptions">
 
-      <div class="disc  disc-1">
+      <div class="disc  disc-1" data-aos="fade-down-right">
         <div class="disc-logo">
           <img alt="" class="disc-logo-img" src="">
           <div class="disc-text ">
@@ -147,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="disc disc-2">
+      <div class="disc disc-2" data-aos="fade-down-left">
         <div class="disc-logo"><img src="" alt="" class="disc-logo-img">
           <div class="disc-text">
             <p>
@@ -161,7 +161,7 @@
           </div>
         </div>
       </div>
-      <div class="disc disc-3">
+      <div class="disc disc-3" data-aos="fade-up-right">
         <div class="disc-logo"><img src="" alt="" class="disc-logo-img">
           <div class="disc-text">
             <p>
@@ -171,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div class="disc disc-4">
+      <div class="disc disc-4" data-aos="fade-up-left">
         <div class="disc-logo"><img src="" alt="" class="disc-logo-img">
           <div class="disc-text">
             <p>
@@ -214,9 +214,19 @@
       </ul>
     </div>
     <div id="process-images">
-      <div class="process-img"><img src="./img/black-bike.png" alt="" id="process-img-motor-1"></div>
-      <div class="process-img"><img src="./img/ash-bike.png" alt="" id="process-img-motor-2"></div>
-      <div class="process-img"><img src="./img/red-bike.png" alt="" id="process-img-motor-3"></div>
+      <div class="process-img">
+        <img alt="" data-aos="zoom-in"
+             id="process-img-motor-1"
+             src="./img/black-bike.png">
+      </div>
+      <div class="process-img">
+        <img alt="" data-aos="zoom-in"
+             data-aos-duration="900"
+             id="process-img-motor-2" src="./img/ash-bike.png">
+      </div>
+      <div class="process-img">
+        <img alt="" data-aos="zoom-in" data-aos-duration="1000" id="process-img-motor-3" src="./img/red-bike.png">
+      </div>
     </div>
   </div>
 
@@ -255,7 +265,7 @@
       <li>+419 000 0000</li>
     </ul>
   </div>
-  <!--copyright-->
+    <!--copyright-->
   </section>
 
   <div id="copyright">
@@ -264,7 +274,8 @@
 
 </footer>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>

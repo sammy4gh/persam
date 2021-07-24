@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--primary-color);
-  margin: auto;
-  color: var(--secondary-color);
-  overflow-x: hidden;
-
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-color);
+    margin: auto;
+    color: var(--secondary-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a, a:hover, a:focus, a:active {
@@ -36,10 +36,10 @@ header {
 
 
 
-#logo-img{
+#logo-img {
 
-  width: 93px;
-  height: 82px;
+    width: 200px;
+    height: 150px;
 }
 
 ul{
